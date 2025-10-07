@@ -1,0 +1,542 @@
+[
+  {
+    "image": "https://images.unsplash.com/photo-1602524202418-6e3c7f2e2d7a",
+    "title": "Creative Studio Pro",
+    "companyName": "PixelForge Ltd.",
+    "id": 1,
+    "description": "Creative Studio Pro is a powerful design application that enables artists and creators to make digital illustrations, 3D models, and visual graphics with ease. It offers seamless performance, a clean UI, and extensive plugin support. Whether you’re a professional designer or a hobbyist, it enhances creativity and workflow efficiency.",
+    "size": 245,
+    "reviews": 1248,
+    "ratingAvg": 4.6,
+    "downloads": 58000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 65 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 693 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7",
+    "title": "Taskify Pro",
+    "companyName": "WorkSmart Inc.",
+    "id": 2,
+    "description": "Taskify Pro is an advanced project management app designed to help teams collaborate efficiently. It supports task tracking, milestone planning, and integrated communication tools. The software’s analytics dashboard provides real-time insights into productivity and workload balance, ensuring smooth project delivery and effective time management for small and large teams.",
+    "size": 190,
+    "reviews": 832,
+    "ratingAvg": 4.3,
+    "downloads": 47000,
+    "ratings": [
+      { "name": "1 star", "count": 55 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 110 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 327 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1612831662375-295c1003d3ca",
+    "title": "MusicFlow Studio",
+    "companyName": "BeatForge Audio",
+    "id": 3,
+    "description": "MusicFlow Studio offers an intuitive environment for producing professional-quality music. It features a wide range of sound effects, instruments, and an AI-assisted mixing engine. The real-time collaboration mode allows multiple users to create together. Whether for beginners or experts, it’s a complete tool for audio production and sound design.",
+    "size": 310,
+    "reviews": 1560,
+    "ratingAvg": 4.8,
+    "downloads": 92000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 280 },
+      { "name": "5 star", "count": 1125 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1581090700227-1e37b190418e",
+    "title": "HealthMate Tracker",
+    "companyName": "FitCore Systems",
+    "id": 4,
+    "description": "HealthMate Tracker is a wellness app that helps users monitor physical activity, sleep, and nutrition. With AI-powered recommendations, it provides personalized fitness plans and daily motivational reminders. Users can track calories, heart rate, and stress levels. It’s perfect for maintaining a healthy lifestyle with ease and scientific precision.",
+    "size": 155,
+    "reviews": 2440,
+    "ratingAvg": 4.4,
+    "downloads": 105000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1130 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "title": "EduLearn Academy",
+    "companyName": "NextGen Learning",
+    "id": 5,
+    "description": "EduLearn Academy is an interactive e-learning platform designed for students and educators. It offers thousands of high-quality video courses, quizzes, and live virtual classes. With AI-driven progress tracking, users can easily identify weak areas and improve performance. It’s an all-in-one digital classroom for continuous learning and skill development.",
+    "size": 278,
+    "reviews": 980,
+    "ratingAvg": 4.5,
+    "downloads": 68000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 430 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1611175694988-6a6b9b7e9a29",
+    "title": "FinanceEase Pro",
+    "companyName": "MoneyMind Tech",
+    "id": 6,
+    "description": "FinanceEase Pro is a smart financial management application that simplifies budgeting, investment tracking, and expense analysis. It provides visual insights into spending habits and suggests saving strategies. Securely connected with bank accounts, it ensures users stay on top of their finances while maintaining full data privacy and control.",
+    "size": 210,
+    "reviews": 1140,
+    "ratingAvg": 4.2,
+    "downloads": 54000,
+    "ratings": [
+      { "name": "1 star", "count": 75 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 415 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0",
+    "title": "DevSync IDE",
+    "companyName": "CodeMaster Labs",
+    "id": 7,
+    "description": "DevSync IDE is a next-generation code editor built for web and mobile developers. It supports real-time collaboration, AI-assisted debugging, and multi-language syntax highlighting. With a minimal interface and cloud-based integration, developers can write, test, and deploy applications faster and more efficiently, anywhere in the world.",
+    "size": 340,
+    "reviews": 1660,
+    "ratingAvg": 4.7,
+    "downloads": 87000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 420 },
+      { "name": "5 star", "count": 975 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1581092334504-7b9c70f9e3e1",
+    "title": "PhotoCrafter X",
+    "companyName": "Lensify Studio",
+    "id": 8,
+    "description": "PhotoCrafter X is an all-in-one photo editing suite packed with professional-grade filters, AI object removal, and color correction tools. It’s ideal for photographers and social media creators. The lightweight yet powerful engine allows real-time editing on any device without lag, producing stunning visuals with just a few clicks.",
+    "size": 295,
+    "reviews": 1340,
+    "ratingAvg": 4.6,
+    "downloads": 72000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 75 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 360 },
+      { "name": "5 star", "count": 705 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    "title": "BrainBoost AI",
+    "companyName": "NeuroTech Solutions",
+    "id": 9,
+    "description": "BrainBoost AI uses cognitive science and machine learning to improve focus, memory, and problem-solving skills. Users complete daily exercises and challenges that adapt to their performance level. With progress analytics and gamified experiences, BrainBoost helps enhance mental agility and maintain peak cognitive function for users of all ages.",
+    "size": 165,
+    "reviews": 890,
+    "ratingAvg": 4.5,
+    "downloads": 49000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 280 },
+      { "name": "5 star", "count": 380 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1504691342899-4d92b50853e1",
+    "title": "Travelio Explorer",
+    "companyName": "WanderWorld Ltd.",
+    "id": 10,
+    "description": "Travelio Explorer helps travelers discover the world like never before. From AI-curated trip recommendations to offline navigation and cultural insights, it’s an essential companion for explorers. Users can save itineraries, share experiences, and find hidden gems globally. It makes travel planning efficient, enjoyable, and deeply personalized.",
+    "size": 198,
+    "reviews": 1200,
+    "ratingAvg": 4.7,
+    "downloads": 87000,
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 330 },
+      { "name": "5 star", "count": 595 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1591696331117-23421b5f39d4",
+    "title": "NoteNest",
+    "companyName": "CloudNotes Inc.",
+    "id": 11,
+    "description": "NoteNest is a feature-rich cloud note-taking app that syncs instantly across all your devices. With markdown support, AI-based search, and folder organization, it’s perfect for students and professionals. Users can collaborate in real-time, annotate PDFs, and keep thoughts structured effortlessly in a distraction-free workspace.",
+    "size": 175,
+    "reviews": 960,
+    "ratingAvg": 4.4,
+    "downloads": 55000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 85 },
+      { "name": "3 star", "count": 170 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 345 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1556740749-887f6717d7e4",
+    "title": "HomeConnect Smart",
+    "companyName": "EcoSmart Living",
+    "id": 12,
+    "description": "HomeConnect Smart integrates all smart home devices into one unified app. Control lighting, temperature, and security from your phone with advanced voice and gesture recognition. The system learns habits and automates energy-saving settings. A truly intelligent solution to simplify and enhance modern home living experiences.",
+    "size": 230,
+    "reviews": 2100,
+    "ratingAvg": 4.5,
+    "downloads": 102000,
+    "ratings": [
+      { "name": "1 star", "count": 75 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 330 },
+      { "name": "4 star", "count": 650 },
+      { "name": "5 star", "count": 925 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "title": "MindSpace Calm",
+    "companyName": "Serenity Labs",
+    "id": 13,
+    "description": "MindSpace Calm is a meditation and mindfulness app crafted to reduce stress and improve mental clarity. It features guided meditations, ambient sounds, and breathing exercises. With daily goals and progress tracking, it helps users develop mindfulness habits that last, bringing calm and balance into daily life.",
+    "size": 120,
+    "reviews": 1540,
+    "ratingAvg": 4.8,
+    "downloads": 96000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 390 },
+      { "name": "5 star", "count": 945 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1564866657313-19b5640b94db",
+    "title": "ShopHub Online",
+    "companyName": "MarketCore Pvt. Ltd.",
+    "id": 14,
+    "description": "ShopHub Online is a seamless e-commerce platform connecting customers with millions of trusted brands. With one-click checkout, smart recommendations, and secure transactions, it redefines online shopping. Users can follow favorite stores, earn loyalty rewards, and enjoy same-day delivery across multiple regions.",
+    "size": 240,
+    "reviews": 2430,
+    "ratingAvg": 4.6,
+    "downloads": 123000,
+    "ratings": [
+      { "name": "1 star", "count": 85 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 650 },
+      { "name": "5 star", "count": 1305 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    "title": "CookIt Chef",
+    "companyName": "DelishTech Co.",
+    "id": 15,
+    "description": "CookIt Chef inspires home cooks with personalized recipes, step-by-step instructions, and smart ingredient suggestions. Users can scan ingredients to get instant meal ideas. With an interactive cooking assistant and nutritional info, it’s the perfect blend of technology and culinary creativity for everyone.",
+    "size": 200,
+    "reviews": 870,
+    "ratingAvg": 4.5,
+    "downloads": 56000,
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 260 },
+      { "name": "5 star", "count": 355 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0",
+    "title": "BuildSmart CAD",
+    "companyName": "Constructify Inc.",
+    "id": 16,
+    "description": "BuildSmart CAD is a professional-grade architectural design tool offering 2D drafting and 3D visualization. It’s optimized for engineers, builders, and architects, enabling fast prototyping, collaboration, and rendering. The intuitive controls and automation tools reduce project design time significantly while maintaining high precision.",
+    "size": 480,
+    "reviews": 930,
+    "ratingAvg": 4.4,
+    "downloads": 61000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 340 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1581091012184-5c4f5d93b893",
+    "title": "SafeVault Password",
+    "companyName": "CyberFort Labs",
+    "id": 17,
+    "description": "SafeVault Password Manager securely stores your credentials using end-to-end encryption. It supports biometric login, password generation, and auto-fill across apps. With breach alerts and device sync, it keeps your digital identity protected while offering convenience and peace of mind.",
+    "size": 90,
+    "reviews": 1100,
+    "ratingAvg": 4.8,
+    "downloads": 83000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 290 },
+      { "name": "5 star", "count": 640 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1536305030438-9fadb2628f81",
+    "title": "Evently Planner",
+    "companyName": "OrganizeUp",
+    "id": 18,
+    "description": "Evently Planner is a full-featured event management app for both personal and corporate use. It lets you create, schedule, and manage events effortlessly with reminders, guest tracking, and budgeting tools. It ensures every event runs perfectly — from weddings to business conferences.",
+    "size": 160,
+    "reviews": 980,
+    "ratingAvg": 4.5,
+    "downloads": 59000,
+    "ratings": [
+      { "name": "1 star", "count": 55 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 260 },
+      { "name": "5 star", "count": 425 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45",
+    "title": "StreamCast Player",
+    "companyName": "NovaVision Media",
+    "id": 19,
+    "description": "StreamCast Player allows seamless streaming of movies, music, and podcasts with stunning quality. It supports offline mode, adaptive bitrate streaming, and personalized playlists. Built with minimalism and speed in mind, it’s your one-stop entertainment solution across all platforms.",
+    "size": 270,
+    "reviews": 2450,
+    "ratingAvg": 4.7,
+    "downloads": 125000,
+    "ratings": [
+      { "name": "1 star", "count": 85 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 540 },
+      { "name": "5 star", "count": 1455 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f",
+    "title": "PetCare Buddy",
+    "companyName": "HappyPaws Tech",
+    "id": 20,
+    "description": "PetCare Buddy helps pet owners manage feeding schedules, vet appointments, and health records easily. With reminders, nutrition tracking, and community forums, it creates a healthy, organized lifestyle for pets. A must-have for responsible and loving pet parents worldwide.",
+    "size": 130,
+    "reviews": 740,
+    "ratingAvg": 4.6,
+    "downloads": 47000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 45 },
+      { "name": "3 star", "count": 110 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 355 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1605902711622-cfb43c4437e0",
+    "title": "FitTrack Gym",
+    "companyName": "StrongCore Apps",
+    "id": 21,
+    "description": "FitTrack Gym is a modern fitness companion app offering custom workout routines, progress charts, and AI-generated training tips. It connects with wearables to provide real-time feedback. Whether at home or gym, FitTrack motivates users toward better strength, endurance, and well-being.",
+    "size": 180,
+    "reviews": 980,
+    "ratingAvg": 4.5,
+    "downloads": 52000,
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 290 },
+      { "name": "5 star", "count": 445 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1556740749-887f6717d7e4",
+    "title": "WeatherSense",
+    "companyName": "SkyCast Labs",
+    "id": 22,
+    "description": "WeatherSense delivers hyperlocal weather forecasts, storm alerts, and air quality insights with unmatched accuracy. Powered by advanced AI models, it helps users plan outdoor activities safely. Its beautiful UI, widgets, and real-time radar visualization make it a must-have daily companion.",
+    "size": 140,
+    "reviews": 1520,
+    "ratingAvg": 4.7,
+    "downloads": 98000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 420 },
+      { "name": "5 star", "count": 840 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "title": "CryptoTrack",
+    "companyName": "BlockChain Works",
+    "id": 23,
+    "description": "CryptoTrack lets investors monitor and manage cryptocurrency portfolios effortlessly. Real-time market data, performance charts, and AI predictions empower users to make smarter investment decisions. Its secure wallet and transaction tracker ensure total transparency and control over digital assets.",
+    "size": 155,
+    "reviews": 1360,
+    "ratingAvg": 4.6,
+    "downloads": 78000,
+    "ratings": [
+      { "name": "1 star", "count": 55 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 170 },
+      { "name": "4 star", "count": 360 },
+      { "name": "5 star", "count": 705 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1593642634367-d91a135587b5",
+    "title": "TimeKeeper Pro",
+    "companyName": "ChronoSoft Ltd.",
+    "id": 24,
+    "description": "TimeKeeper Pro helps professionals manage schedules, track goals, and boost productivity through intelligent time analytics. It integrates with calendars and task tools, offering a unified workspace for personal and business use. Its visual dashboard provides deep insights into daily habits and focus efficiency.",
+    "size": 125,
+    "reviews": 960,
+    "ratingAvg": 4.4,
+    "downloads": 51000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 280 },
+      { "name": "5 star", "count": 370 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1502767089025-6572583495b0",
+    "title": "Artify Canvas",
+    "companyName": "ColorBlend Studios",
+    "id": 25,
+    "description": "Artify Canvas is a digital drawing tool for artists who love detail. Featuring realistic brushes, pressure sensitivity, and blending engines, it recreates a natural painting feel. Ideal for illustrators, comic artists, and designers seeking freedom to express creativity with precision and ease.",
+    "size": 280,
+    "reviews": 1220,
+    "ratingAvg": 4.7,
+    "downloads": 68000,
+    "ratings": [
+      { "name": "1 star", "count": 35 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 320 },
+      { "name": "5 star", "count": 665 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1564866657313-19b5640b94db",
+    "title": "NewsFlash",
+    "companyName": "InfoPulse Media",
+    "id": 26,
+    "description": "NewsFlash delivers curated news from verified global sources. With categories like tech, politics, and sports, it keeps users informed without overwhelm. The AI-based summary engine condenses long articles into quick reads, while offline reading and dark mode make it user-friendly.",
+    "size": 110,
+    "reviews": 890,
+    "ratingAvg": 4.3,
+    "downloads": 47000,
+    "ratings": [
+      { "name": "1 star", "count": 65 },
+      { "name": "2 star", "count": 75 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 340 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1593642634367-d91a135587b5",
+    "title": "LearnLang Pro",
+    "companyName": "LingoSmart",
+    "id": 27,
+    "description": "LearnLang Pro makes learning new languages fun and immersive through gamified lessons, pronunciation AI, and conversation practice. With over 30 languages supported, users can achieve fluency at their own pace, backed by real-time progress tracking and community challenges.",
+    "size": 220,
+    "reviews": 1330,
+    "ratingAvg": 4.6,
+    "downloads": 74000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 75 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 340 },
+      { "name": "5 star", "count": 685 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1536305030438-9fadb2628f81",
+    "title": "GardenEase",
+    "companyName": "GreenLeaf Labs",
+    "id": 28,
+    "description": "GardenEase assists home gardeners with plant care reminders, soil analysis, and pest control tips. Users can photograph plants for instant identification and receive AI-generated care suggestions. It’s a perfect digital companion for creating and maintaining a thriving green space.",
+    "size": 150,
+    "reviews": 910,
+    "ratingAvg": 4.5,
+    "downloads": 48000,
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 270 },
+      { "name": "5 star", "count": 385 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45",
+    "title": "MindMapX",
+    "companyName": "IdeaWorks",
+    "id": 29,
+    "description": "MindMapX allows users to brainstorm ideas visually through nodes, connections, and themes. It’s ideal for project planning, study notes, and team meetings. The collaborative workspace ensures every idea is captured, refined, and turned into actionable strategies effortlessly.",
+    "size": 170,
+    "reviews": 970,
+    "ratingAvg": 4.5,
+    "downloads": 52000,
+    "ratings": [
+      { "name": "1 star", "count": 55 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 170 },
+      { "name": "4 star", "count": 290 },
+      { "name": "5 star", "count": 375 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1602524202418-6e3c7f2e2d7a",
+    "title": "StoryVerse",
+    "companyName": "WriteFlow Media",
+    "id": 30,
+    "description": "StoryVerse gives writers a space to create, publish, and share stories with readers worldwide. Featuring a distraction-free editor, collaborative writing mode, and community reviews, it encourages creativity and connection between authors and audiences in a dynamic digital world.",
+    "size": 260,
+    "reviews": 1250,
+    "ratingAvg": 4.7,
+    "downloads": 89000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 610 }
+    ]
+  }
+]
