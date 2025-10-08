@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../../Componets/Banner/Banner';
 import Trending from '../../Componets/Trending/Trending';
-import { useLoaderData } from 'react-router';
+import { Link, useLoaderData } from 'react-router';
 
 const Home = () => {
     const tDataone = useLoaderData()
@@ -11,10 +11,15 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <div className='grid grid-cols-4'>
+            <div className='max-w-[1400px] mx-auto bg-[#D2D2D2] text-black pt-[80px] grid grid-cols-4 gap-3 p-4'>
                 {
-                    tDataone.map(tData=><Trending tData={tData}></Trending>)
+                    tDataone.map(tData=><Trending key={tData.id} tData={tData}></Trending>)
                 }
+            </div>
+            <div className='max-w-[1400px] bg-[#D2D2D2] mx-auto text-white flex justify-center pt-[20px]  pb-[80px]'>
+               <Link to={'/apps'}>
+                     <button className='bg-linear-65 from-[#632EE3] to-[#9F62F2] px-2 py-1 rounded-md'>Show All</button>
+               </Link>
             </div>
         </div>
     );
