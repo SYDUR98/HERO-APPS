@@ -4,6 +4,7 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import Apps from "../Pages/Apps";
 import Installation from "../Pages/Installation/Installation";
+import DetailsApp from "./DetailsApp/DetailsApp";
 
 
 
@@ -24,6 +25,12 @@ export const router = createBrowserRouter([
             loader:()=> fetch('/datatwo.json'),
             Component:Apps
         },
+        {
+            path:"/detailsapp/:id",
+            loader:()=> fetch('/datatwo.json'),
+            Component:DetailsApp
+        },
+
         {
             path:"/installation",
             Component:Installation

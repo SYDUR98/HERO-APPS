@@ -1,11 +1,13 @@
 import React from "react";
 import dowImg from '../../assets/icon-downloads.png'
 import ratingImg from '../../assets/icon-ratings.png'
+import { Link } from "react-router";
 
 const AllData = ({ oneData }) => {
-     const {image,title,reviews,ratingAvg} = oneData
+     const {id,image,title,reviews,ratingAvg} = oneData
   return (
-    <div>
+    <Link to={`/detailsapp/${id}`}>
+      <div>
       <div className="max-w-[1400px] mx-auto bg-[#D2D2D2] text-black pt-[20px]">
         <div>
           <div className="bg-white p-4 rounded-lg">
@@ -25,6 +27,7 @@ const AllData = ({ oneData }) => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 
