@@ -24,7 +24,7 @@ const Apps = () => {
         </h3>
         <label className="input">
           <svg
-            className="h-[1em] opacity-50"
+            className="h-[1em] text-gray-500 dark:text-gray-300"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -41,7 +41,7 @@ const Apps = () => {
           </svg>
           <input 
           type="search" 
-          className="grow" 
+          className="grow bg-white text-black dark:bg-gray-300" 
           onChange={(e)=>setQuery(e.target.value)}
           placeholder="Search" />
         </label>
