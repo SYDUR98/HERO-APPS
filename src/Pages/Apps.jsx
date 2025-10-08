@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLoaderData } from "react-router";
+import { Link, useLoaderData } from "react-router";
 import AllData from "../Componets/AllData/AllData";
 
 const Apps = () => {
@@ -45,6 +45,7 @@ const Apps = () => {
           </svg>
           <input
             type="search"
+            value={query}
             className="grow bg-white text-black dark:bg-gray-300"
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search"
@@ -57,9 +58,17 @@ const Apps = () => {
             <AllData key={oneData.id} oneData={oneData} />
           ))
         ) : (
-          <p className="col-span-4 text-center text-red-500 font-semibold text-lg">
-            No Apps Found
-          </p>
+          <div className="flex justify-center col-span-6" >
+            <div>
+              <p className="text-center text-red-500 font-semibold text-3xl">
+              No Apps Found
+            </p>
+              <button onClick={()=>setQuery('')} className="bg-linear-65 from-[#632EE3] to-[#9F62F2] px-2 py-1 rounded-md mt-4 text-white">
+                Show All Apps
+              </button>
+            </div>
+            
+          </div>
         )}
       </div>
     </div>
