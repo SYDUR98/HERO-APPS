@@ -3,14 +3,13 @@ import dowImg from '../../assets/icon-downloads.png'
 import ratingImg from '../../assets/icon-ratings.png'
 
 const AllData = ({ oneData }) => {
-     const {image,title,reviews,ratingAvg,id} = oneData
+     const {image,title,reviews,ratingAvg} = oneData
   return (
     <div>
-        <p>{id}</p>
       <div className="max-w-[1400px] mx-auto bg-[#D2D2D2] text-black pt-[20px]">
         <div>
-          <div className="bg-white p-2 rounded-lg">
-            <img src={image} alt="" />
+          <div className="bg-white p-4 rounded-lg">
+            <img className="rounded-lg" src={image} alt="" />
             <h4 className="text-[#001931]">{title}</h4>
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-1 text-[#00D390]">

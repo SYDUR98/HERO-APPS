@@ -8,8 +8,8 @@ const Trending = ({tData}) => {
     return (
         <div className='max-w-[1400px] mx-auto bg-[#D2D2D2] text-black pt-[20px]'>
             <div>
-                <div className='bg-white p-2 rounded-lg'>
-                    <img src={image} alt="" />
+                <div className='bg-white p-4 rounded-lg'>
+                    <img className='rounded-lg' src={image} alt="" />
                     <h4 className='text-[#001931]'>{title}</h4>
                     <div className='flex justify-between items-center'>
                         <div className='flex items-center gap-1 text-[#00D390]'>

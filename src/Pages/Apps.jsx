@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData } from "react-router";
 import AllData from "../Componets/AllData/AllData";
 
@@ -6,10 +6,48 @@ const Apps = () => {
   const allData = useLoaderData();
   // console.log(allData)
 
+  const [query,setQuery] = useState([])
+
   return (
-    <div>
-      <div className="className='max-w-[1400px] mx-auto bg-[#D2D2D2] text-black pt-[80px] grid grid-cols-4 gap-3 p-4">
-        {allData.map((oneData) => (
+    <div className="max-w-[1400px] mx-auto bg-[#D2D2D2] text-black pt-[80px] pb-[40px]">
+      <div className="text-center">
+        <h1 className="text-[#001931] font-bold text-3xl">
+          Our All Applications
+        </h1>
+        <p className="text-[#627382] mt-2">
+          Explore All Apps on the Market developed by us. We code for Millions
+        </p>
+      </div>
+      <div className="px-10 flex justify-between items-center">
+        <h3 className="font-semibold text-[24px]">
+          ({allData.length}) Apps Found
+        </h3>
+        <label className="input">
+          <svg
+            className="h-[1em] opacity-50"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <g
+              strokeLinejoin="round"
+              strokeLinecap="round"
+              strokeWidth="2.5"
+              fill="none"
+              stroke="currentColor"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.3-4.3"></path>
+            </g>
+          </svg>
+          <input 
+          type="search" 
+          className="grow" 
+          onChange={(e)=>setQuery(e.target.value)}
+          placeholder="Search" />
+        </label>
+      </div>
+      <div className=" grid grid-cols-4 gap-3 px-10 py-4">
+        {allData.filter((oneData) => oneData.title.toLowerCase().includes(query)).map((oneData)=>(
           <AllData key={oneData.id} oneData={oneData}></AllData>
         ))}
       </div>
