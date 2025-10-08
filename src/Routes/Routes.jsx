@@ -21,6 +21,7 @@ export const router = createBrowserRouter([
         },
         {
             path:"/apps",
+            loader:()=> fetch('/datatwo.json'),
             Component:Apps
         },
         {

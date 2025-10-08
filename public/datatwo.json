@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://images.unsplash.com/photo-1602524202418-6e3c7f2e2d7a",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475",
     "title": "Creative Studio Pro",
     "companyName": "PixelForge Ltd.",
     "id": 1,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1612831662375-295c1003d3ca",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     "title": "MusicFlow Studio",
     "companyName": "BeatForge Audio",
     "id": 3,
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1611175694988-6a6b9b7e9a29",
+    "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29",
     "title": "FinanceEase Pro",
     "companyName": "MoneyMind Tech",
     "id": 6,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1581092334504-7b9c70f9e3e1",
+    "image": "https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0",
     "title": "PhotoCrafter X",
     "companyName": "Lensify Studio",
     "id": 8,
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1591696331117-23421b5f39d4",
+    "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29",
     "title": "NoteNest",
     "companyName": "CloudNotes Inc.",
     "id": 11,
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1564866657313-19b5640b94db",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475",
     "title": "ShopHub Online",
     "companyName": "MarketCore Pvt. Ltd.",
     "id": 14,
@@ -270,7 +270,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
     "title": "BuildSmart CAD",
     "companyName": "Constructify Inc.",
     "id": 16,
@@ -288,7 +288,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1581091012184-5c4f5d93b893",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     "title": "SafeVault Password",
     "companyName": "CyberFort Labs",
     "id": 17,
@@ -306,7 +306,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1536305030438-9fadb2628f81",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4",
     "title": "Evently Planner",
     "companyName": "OrganizeUp",
     "id": 18,
@@ -342,7 +342,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f",
+    "image": "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
     "title": "PetCare Buddy",
     "companyName": "HappyPaws Tech",
     "id": 20,
@@ -360,7 +360,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1605902711622-cfb43c4437e0",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     "title": "FitTrack Gym",
     "companyName": "StrongCore Apps",
     "id": 21,
@@ -432,7 +432,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1502767089025-6572583495b0",
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998",
     "title": "Artify Canvas",
     "companyName": "ColorBlend Studios",
     "id": 25,
@@ -450,7 +450,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1564866657313-19b5640b94db",
+    "image": "https://images.unsplash.com/photo-1527689368864-3a821dbccc34",
     "title": "NewsFlash",
     "companyName": "InfoPulse Media",
     "id": 26,
@@ -486,7 +486,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1536305030438-9fadb2628f81",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
     "title": "GardenEase",
     "companyName": "GreenLeaf Labs",
     "id": 28,
@@ -522,7 +522,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1602524202418-6e3c7f2e2d7a",
+    "image": "https://images.unsplash.com/photo-1503264116251-35a269479413",
     "title": "StoryVerse",
     "companyName": "WriteFlow Media",
     "id": 30,
@@ -538,5 +538,42 @@
       { "name": "4 star", "count": 350 },
       { "name": "5 star", "count": 610 }
     ]
-  }
+  },
+  {
+  "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216",
+  "title": "FitTrack",
+  "companyName": "ActivePulse Inc.",
+  "id": 31,
+  "description": "FitTrack helps users monitor their fitness journey with real-time health metrics, workout recommendations, and sleep tracking. The app syncs with wearables to analyze activity patterns and suggest personalized improvements for a balanced lifestyle.",
+  "size": 175,
+  "reviews": 1120,
+  "ratingAvg": 4.4,
+  "downloads": 72000,
+  "ratings": [
+    { "name": "1 star", "count": 60 },
+    { "name": "2 star", "count": 95 },
+    { "name": "3 star", "count": 180 },
+    { "name": "4 star", "count": 310 },
+    { "name": "5 star", "count": 475 }
+  ]
+},
+{
+  "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+  "title": "TravelMate",
+  "companyName": "SkyBound Labs",
+  "id": 32,
+  "description": "TravelMate is a smart trip planner that suggests destinations, builds itineraries, and finds the best deals on flights and hotels. With offline maps and AI-driven travel insights, it’s the perfect companion for explorers and adventurers.",
+  "size": 210,
+  "reviews": 1340,
+  "ratingAvg": 4.8,
+  "downloads": 88000,
+  "ratings": [
+    { "name": "1 star", "count": 40 },
+    { "name": "2 star", "count": 65 },
+    { "name": "3 star", "count": 120 },
+    { "name": "4 star", "count": 340 },
+    { "name": "5 star", "count": 775 }
+  ]
+}
+
 ]
