@@ -6,7 +6,11 @@ const Apps = () => {
   const allData = useLoaderData();
   // console.log(allData)
 
-  const [query,setQuery] = useState([])
+  const [query, setQuery] = useState("");
+
+  const filteredData = allData.filter((oneData) =>
+    oneData.title.toLowerCase().includes(query.toLowerCase())
+  );
 
   return (
     <div className="max-w-[1400px] mx-auto bg-[#D2D2D2] text-black pt-[80px] pb-[40px]">
@@ -39,17 +43,24 @@ const Apps = () => {
               <path d="m21 21-4.3-4.3"></path>
             </g>
           </svg>
-          <input 
-          type="search" 
-          className="grow bg-white text-black dark:bg-gray-300" 
-          onChange={(e)=>setQuery(e.target.value)}
-          placeholder="Search" />
+          <input
+            type="search"
+            className="grow bg-white text-black dark:bg-gray-300"
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search"
+          />
         </label>
       </div>
       <div className=" grid grid-cols-4 gap-3 px-10 py-4">
-        {allData.filter((oneData) => oneData.title.toLowerCase().includes(query)).map((oneData)=>(
-          <AllData key={oneData.id} oneData={oneData}></AllData>
-        ))}
+        {filteredData.length > 0 ? (
+          filteredData.map((oneData) => (
+            <AllData key={oneData.id} oneData={oneData} />
+          ))
+        ) : (
+          <p className="col-span-4 text-center text-red-500 font-semibold text-lg">
+            No Apps Found
+          </p>
+        )}
       </div>
     </div>
   );
