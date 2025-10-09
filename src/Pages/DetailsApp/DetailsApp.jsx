@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router";
+import { Link, useLoaderData, useParams } from "react-router";
 import dowImg from "../../assets/icon-downloads.png";
 import ratingImg from "../../assets/icon-ratings.png";
 import reviewImg from "../../assets/icon-review.png";
-
+import { ToastContainer, toast } from "react-toastify";
 import ResultChart from "../../Componets/ResultChart/ResultChart";
 import {
   getStorageData,
@@ -15,6 +15,22 @@ const DetailsApp = () => {
   const { id } = useParams();
   const appId = parseInt(id);
   // console.log(allApps)
+
+  // if don't found app
+  const app = allApps.find((a) => a.id === appId);
+  if (!app) {
+    return (
+      <div className="max-w-[1400px] mx-auto p-10 text-center  bg-[#D2D2D2] text-red-500">
+        <h1 className="text-3xl font-bold">App Not Found</h1>
+        <Link to={"/"}>
+          <button className="bg-linear-65 from-[#632EE3] to-[#9F62F2] px-2 py-1 rounded-md mt-4 text-white">
+            Go Back!
+          </button>
+        </Link>
+      </div>
+    );
+  }
+
   const apps = allApps.find((app) => app.id === appId);
   // console.log(apps);
   const {
@@ -29,22 +45,16 @@ const DetailsApp = () => {
     size,
   } = apps;
 
-
   const [install, setInstall] = useState([]);
 
-  
   useEffect(() => {
     const dataFromStorage = getStorageData() || [];
     setInstall(dataFromStorage);
   }, []);
 
-  
-  // useEffect(() => {
-  //   console.log("Installed apps:", install);
-  // }, [install]);
 
- 
   const btnHandler = (id) => {
+    toast("Successfully installed!");
     const dataFromStorage = getStorageData() || [];
     if (dataFromStorage.includes(id)) {
       alert("This App is already Installed");
@@ -92,7 +102,7 @@ const DetailsApp = () => {
                 ? "bg-red-400 cursor-not-allowed"
                 : "bg-[#00D390]"
             }`}
-            disabled={install.includes(appId)} 
+            disabled={install.includes(appId)}
           >
             {install.includes(appId) ? "Installed" : `Install Now (${size} MB)`}
           </button>
@@ -105,6 +115,7 @@ const DetailsApp = () => {
         <h1 className="font-bold text-xl text-[#001931]">Description</h1>
         <p className="text-[#627382] mt-2">{description}</p>
       </div>
+      <ToastContainer />
     </div>
   );
 };

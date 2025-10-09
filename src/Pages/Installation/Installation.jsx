@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 import {
   getStorageData,
   setLocalData,
@@ -14,17 +15,18 @@ const Installation = () => {
 
   const [installedApps, setInstalledApps] = useState([]);
   const [sortedApps, setSortedApps] = useState([]);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     const dataFromStorage = getStorageData() || [];
     setInstalledApps(dataFromStorage);
   }, []);
   //   console.log(installedApps);
 
-  
   //   console.log(allInstallApp)
 
   const unstallHander = (id) => {
     // console.log(id)
+    toast("Uninstalled!");
     const updatedApps = installedApps.filter((app) => app !== id);
     setInstalledApps(updatedApps);
     setLocalData(updatedApps);
@@ -36,19 +38,24 @@ const Installation = () => {
     );
     setSortedApps(filtered);
   }, [allApp, installedApps]);
+
   const handleType = (type) => {
-    if (type === "up") {
-      const sortedByUp = [...sortedApps].sort(
-        (a, b) => a.ratingAvg - b.ratingAvg
-      );
-      setSortedApps(sortedByUp);
-    }
-    if (type === "down") {
-      const sortedByDown = [...sortedApps].sort(
-        (a, b) => b.ratingAvg - a.ratingAvg
-      );
-      setSortedApps(sortedByDown);
-    }
+    setLoading(true);
+    setTimeout(() => {
+      if (type === "up") {
+        const sortedByUp = [...sortedApps].sort(
+          (a, b) => a.downloads - b.downloads
+        );
+        setSortedApps(sortedByUp);
+      }
+      if (type === "down") {
+        const sortedByDown = [...sortedApps].sort(
+          (a, b) => b.ratingAvg - a.ratingAvg
+        );
+        setSortedApps(sortedByDown);
+      }
+      setLoading(false);
+    }, 500);
   };
 
   return (
@@ -68,57 +75,69 @@ const Installation = () => {
             <option value="" disabled>
               Sort by:
             </option>
-            <option value="up">Rating Low to High</option>
-            <option value="down">Rating High to Low</option>
+            <option value="up">Low - High</option>
+            <option value="down">High - Low</option>
           </select>
         </div>
       </div>
       <div className="px-10">{}</div>
 
-      <div className="mx-10 py-4 ">
-        {sortedApps.map((app) => (
-          <div
-            key={app.id}
-            className=" flex justify-between items-center px-10 gap-10  py-4 mt-4 bg-white rounded-lg"
-          >
-            <div className="flex  gap-6">
-              <img
-                className="max-w-[200px] h-[100px] rounded-lg"
-                src={app.image}
-                alt=""
-              />
-              <div className="flex flex-col gap-y-3">
-                <p className="font-bold">{app.title}</p>
-                <div className="flex items-center gap-6 mt-3">
-                  <div className=" flex  items-center gap-2 ">
-                    <img className="w-[20px] h-[20px]" src={dowImg} alt="" />
-                    <p className="font-bold text-center text-[#00D390]">
-                      {app.ratingAvg}
-                    </p>
-                  </div>
-                  <div className="flex gap-2 items-center">
-                    <img className="w-[20px] h-[20px]" src={ratingImg} alt="" />
-                    <p className="font-bold text-center text-[#FF8811] ">
-                      {app.ratingAvg}
-                    </p>
-                  </div>
-                  <div className="">
-                    <p className="text-[#627382]"> {app.size} MB</p>
+      {loading ? (
+        <div className="flex justify-center items-center py-10">
+          <span className="loading loading-spinner loading-lg text-success"></span>
+        </div>
+      ) : (
+        <div className="mx-10 py-4">
+          {sortedApps.map((app) => (
+            <div
+              key={app.id}
+              className=" flex justify-between items-center px-10 gap-10  py-4 mt-4 bg-white rounded-lg"
+            >
+              <div className="flex  gap-6">
+                <img
+                  className="max-w-[200px] h-[100px] rounded-lg"
+                  src={app.image}
+                  alt=""
+                />
+                <div className="flex flex-col gap-y-3">
+                  <p className="font-bold">{app.title}</p>
+                  <div className="flex items-center gap-6 mt-3">
+                    <div className=" flex  items-center gap-2 ">
+                      <img className="w-[20px] h-[20px]" src={dowImg} alt="" />
+                      <p className="font-bold text-center text-[#00D390]">
+                        {app.ratingAvg}
+                      </p>
+                    </div>
+                    <div className="flex gap-2 items-center">
+                      <img
+                        className="w-[20px] h-[20px]"
+                        src={ratingImg}
+                        alt=""
+                      />
+                      <p className="font-bold text-center text-[#FF8811] ">
+                        {app.ratingAvg}
+                      </p>
+                    </div>
+                    <div className="">
+                      <p className="text-[#627382]"> {app.size} MB</p>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div className="">
+                <button
+                  onClick={() => unstallHander(app.id)}
+                  className="btn btn-success text-white"
+                >
+                  Uninstall
+                </button>
+              </div>
             </div>
-            <div className="">
-              <button
-                onClick={() => unstallHander(app.id)}
-                className="btn btn-success text-white"
-              >
-                Uninstall
-              </button>
-            </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
+     
+      <ToastContainer />
     </div>
   );
 };

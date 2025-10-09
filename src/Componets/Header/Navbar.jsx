@@ -78,7 +78,7 @@ const Navbar = () => {
         </div>
         <a className=" flex items-center gap-2 text-xl">
           <img className="w-[40px] h-[40px]" src={logoImg} alt="" />
-          HERO.IO
+          <span className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text">HERO.IO</span>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">

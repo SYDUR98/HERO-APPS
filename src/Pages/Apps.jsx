@@ -7,6 +7,7 @@ const Apps = () => {
   // console.log(allData)
 
   const [query, setQuery] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const filteredData = allData.filter((oneData) =>
     oneData.title.toLowerCase().includes(query.toLowerCase())
@@ -47,30 +48,43 @@ const Apps = () => {
             type="search"
             value={query}
             className="grow bg-white text-black dark:bg-gray-300"
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e) => {
+              setLoading(true); 
+              setQuery(e.target.value); 
+              setTimeout(() => setLoading(false), 400);
+            }}
             placeholder="Search"
           />
         </label>
       </div>
-      <div className=" grid grid-cols-4 gap-3 px-10 py-4">
-        {filteredData.length > 0 ? (
-          filteredData.map((oneData) => (
-            <AllData key={oneData.id} oneData={oneData} />
-          ))
-        ) : (
-          <div className="flex justify-center col-span-6" >
-            <div>
-              <p className="text-center text-red-500 font-semibold text-3xl">
-              No Apps Found
-            </p>
-              <button onClick={()=>setQuery('')} className="bg-linear-65 from-[#632EE3] to-[#9F62F2] px-2 py-1 rounded-md mt-4 text-white">
-                Show All Apps
-              </button>
+      {loading ? (
+        <div className="flex justify-center items-center h-40">
+          <div className="w-10 h-10 border-4 border-gray-300 border-t-[#632EE3] rounded-full animate-spin"></div>
+        </div>
+      ) : (
+        <div className="grid grid-cols-4 gap-3 px-10 py-4">
+          {filteredData.length > 0 ? (
+            filteredData.map((oneData) => (
+              <AllData key={oneData.id} oneData={oneData} />
+            ))
+          ) : (
+            <div className="flex justify-center col-span-6">
+              <div>
+                <p className="text-center text-red-500 font-semibold text-3xl">
+                  No App Found
+                </p>
+                <button
+                  onClick={() => setQuery("")}
+                  className="bg-linear-65 from-[#632EE3] to-[#9F62F2] px-2 py-1 rounded-md mt-4 text-white"
+                >
+                  Show All Apps
+                </button>
+              </div>
             </div>
-            
-          </div>
-        )}
-      </div>
+          )}
+        </div>
+      )}
+
     </div>
   );
 };
