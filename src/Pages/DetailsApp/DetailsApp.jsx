@@ -92,7 +92,7 @@ const DetailsApp = () => {
                 ? "bg-red-400 cursor-not-allowed"
                 : "bg-[#00D390]"
             }`}
-            disabled={install.includes(appId)} // prevent clicking again
+            disabled={install.includes(appId)} 
           >
             {install.includes(appId) ? "Installed" : `Install Now (${size} MB)`}
           </button>

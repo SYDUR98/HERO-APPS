@@ -10,18 +10,21 @@ const getLocalStorageData = () =>{
 }
 
 
-const setLocalStorageData = (id)=>{
-    const getDataLocal = getLocalStorageData()
-    if(getDataLocal.includes(id)){
-        alert("This App is already Install")
+const setLocalStorageData = (data) => {
+  if (Array.isArray(data)) {
+    localStorage.setItem("appList", JSON.stringify(data));
+  } else {
+    const getDataLocal = getLocalStorageData();
+    if (getDataLocal.includes(data)) {
+      alert("This App is already Installed");
+    } else {
+      const updatedData = [...getDataLocal, data];
+      localStorage.setItem("appList", JSON.stringify(updatedData));
     }
-    else{
-        getDataLocal.push(id)
-        const data = JSON.stringify(getDataLocal)
-        localStorage.setItem("appList",data)
+  }
+};
 
-}
-    }
+   
 
 
 export {setLocalStorageData as setLocalData,getLocalStorageData as getStorageData}

@@ -4,7 +4,7 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import Apps from "../Pages/Apps";
 import Installation from "../Pages/Installation/Installation";
-import DetailsApp from "./DetailsApp/DetailsApp";
+import DetailsApp from "../Pages/DetailsApp/DetailsApp";
 
 
 
@@ -33,6 +33,7 @@ export const router = createBrowserRouter([
 
         {
             path:"/installation",
+            loader:()=> fetch('/datatwo.json'),
             Component:Installation
         },
     ]

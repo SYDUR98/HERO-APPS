@@ -1,27 +1,50 @@
 import React from "react";
-import { Link } from "react-router";
-import logoImg from '../../assets/logo.png'
-import gitImg from '../../assets/gitbub.png'
+import { Link, NavLink } from "react-router";
+import logoImg from "../../assets/logo.png";
+import gitImg from "../../assets/gitbub.png";
 
 const Navbar = () => {
-    const manuLink = <>
-            <Link to="/">
-                <li>
-              <a>Home</a>
-                </li>
-            </Link>
-            <Link to="/apps">
-                <li>
-                  <a>Apps</a>
-                </li>
-            </Link>
-            <Link to="/installation">
-                <li>
-                  <a>Installation</a>
-                </li>
-            </Link>
-           
+  const manuLink = (
+    <>
+      <li>
+        <NavLink
+          to="/"
+          end
+          className={({ isActive }) =>
+            isActive
+              ? "text-white bg-blue-500 px-3 py-1 rounded"
+              : "text-black hover:text-blue-500"
+          }
+        >
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/apps"
+          className={({ isActive }) =>
+            isActive || window.location.pathname.startsWith("/detailsapp")
+              ? "text-white bg-blue-500 px-3 py-1 rounded"
+              : "text-black hover:text-blue-500"
+          }
+        >
+          Apps
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/installation"
+          className={({ isActive }) =>
+            isActive
+              ? "text-white bg-blue-500 px-3 py-1 rounded"
+              : "text-black hover:text-blue-500"
+          }
+        >
+          Installation
+        </NavLink>
+      </li>
     </>
+  );
   return (
     <div className=" max-w-[1400px] mx-auto bg-[#D2D2D2] text-black navbar shadow-sm">
       <div className="navbar-start">
@@ -51,13 +74,11 @@ const Navbar = () => {
               <a>Item 1</a>
             </li> */}
             {manuLink}
-           
-            
           </ul>
         </div>
         <a className=" flex items-center gap-2 text-xl">
-            <img className="w-[40px] h-[40px]" src={logoImg} alt="" />  
-            HERO.IO
+          <img className="w-[40px] h-[40px]" src={logoImg} alt="" />
+          HERO.IO
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -65,14 +86,17 @@ const Navbar = () => {
           {/* <li>
             <a>Item 1</a>
           </li> */}
-         {manuLink}
-        
+          {manuLink}
         </ul>
       </div>
       <div className="navbar-end ">
-        <a className="btn bg-linear-65 from-[#632EE3] to-[#9F62F2]" href="https://github.com/SYDUR98/boipuka-2025/blob/main/src/pages/Home/Home.jsx">
+        <a
+          className="btn bg-linear-65 from-[#632EE3] to-[#9F62F2]"
+          href="https://github.com/SYDUR98/boipuka-2025/blob/main/src/pages/Home/Home.jsx"
+        >
           <img src={gitImg} alt="" />
-          Contribute</a>
+          Contribute
+        </a>
       </div>
     </div>
   );
