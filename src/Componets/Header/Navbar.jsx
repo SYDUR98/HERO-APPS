@@ -93,6 +93,7 @@ const Navbar = () => {
         <a
           className="btn bg-linear-65 from-[#632EE3] to-[#9F62F2]"
           href="https://github.com/SYDUR98/boipuka-2025/blob/main/src/pages/Home/Home.jsx"
+          target="_blank"
         >
           <img src={gitImg} alt="" />
           Contribute
