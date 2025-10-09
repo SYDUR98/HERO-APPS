@@ -61,7 +61,7 @@ const Installation = () => {
   return (
     <div className="max-w-[1400px] mx-auto bg-[#D2D2D2] text-black">
       <AppBanner></AppBanner>
-      <div className="px-10 flex justify-between items-center">
+      <div className="px-10 flex flex-col md:flex-row justify-between items-center">
         <h2 className="text-[#001931] font-bold text-xl">
           {sortedApps.length} Apps Found
         </h2>
@@ -83,7 +83,7 @@ const Installation = () => {
       <div className="px-10">{}</div>
 
       {loading ? (
-        <div className="flex justify-center items-center py-10">
+        <div className="flex flex-col md:flex-row justify-center items-center py-10">
           <span className="loading loading-spinner loading-lg text-success"></span>
         </div>
       ) : (
@@ -91,17 +91,17 @@ const Installation = () => {
           {sortedApps.map((app) => (
             <div
               key={app.id}
-              className=" flex justify-between items-center px-10 gap-10  py-4 mt-4 bg-white rounded-lg"
+              className=" flex flex-col md:flex-row justify-between items-center px-10 gap-10  py-4 mt-4 bg-white rounded-lg"
             >
-              <div className="flex  gap-6">
+              <div className="flex gap-6">
                 <img
                   className="max-w-[200px] h-[100px] rounded-lg"
                   src={app.image}
                   alt=""
                 />
-                <div className="flex flex-col gap-y-3">
+                <div className="flex flex-col md:flex-row  md:gap-y-3">
                   <p className="font-bold">{app.title}</p>
-                  <div className="flex items-center gap-6 mt-3">
+                  <div className="flex flex-col md:flex-row  items-center md:gap-6 md:mt-3">
                     <div className=" flex  items-center gap-2 ">
                       <img className="w-[20px] h-[20px]" src={dowImg} alt="" />
                       <p className="font-bold text-center text-[#00D390]">

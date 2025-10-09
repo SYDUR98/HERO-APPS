@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <div className='max-w-[1400px] mx-auto bg-[#D2D2D2] text-black pt-[80px] grid grid-cols-4 gap-3 px-10 py-4'>
+            <div className='max-w-[1400px] mx-auto bg-[#D2D2D2] text-black pt-[80px] grid grid-cols-1 md:grid-cols-4 gap-3 px-10 py-4'>
                 {
                     tDataone.map(tData=><Trending key={tData.id} tData={tData}></Trending>)
                 }

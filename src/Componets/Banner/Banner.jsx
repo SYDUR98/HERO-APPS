@@ -37,7 +37,7 @@ const Banner = () => {
           <h1 className="font-bold text-4xl ">
             Trusted by Millions, Built for You
           </h1>
-          <div className="pt-[40px] flex gap-20 justify-center">
+          <div className="pt-[40px] flex flex-col md:flex-row gap-20 justify-center">
             <div>
               <p>Total Downloads</p>
               <h3 className="font-extrabold text-[64px]">29.6M</h3>

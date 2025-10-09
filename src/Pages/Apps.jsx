@@ -23,7 +23,7 @@ const Apps = () => {
           Explore All Apps on the Market developed by us. We code for Millions
         </p>
       </div>
-      <div className="px-10 flex justify-between items-center">
+      <div className="px-10 flex flex-col md:flex-row justify-between items-center">
         <h3 className="font-semibold text-[24px]">
           ({allData.length}) Apps Found
         </h3>
@@ -58,11 +58,11 @@ const Apps = () => {
         </label>
       </div>
       {loading ? (
-        <div className="flex justify-center items-center h-40">
+        <div className="flex flex-col md:flex-row justify-center items-center h-40">
           <div className="w-10 h-10 border-4 border-gray-300 border-t-[#632EE3] rounded-full animate-spin"></div>
         </div>
       ) : (
-        <div className="grid grid-cols-4 gap-3 px-10 py-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-3 px-10 py-4">
           {filteredData.length > 0 ? (
             filteredData.map((oneData) => (
               <AllData key={oneData.id} oneData={oneData} />

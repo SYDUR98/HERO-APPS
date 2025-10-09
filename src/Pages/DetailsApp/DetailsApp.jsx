@@ -66,7 +66,7 @@ const DetailsApp = () => {
 
   return (
     <div className="max-w-[1400px] mx-auto bg-[#D2D2D2] text-black p-[60px]">
-      <div className="flex gap-10 ">
+      <div className="flex flex-col md:flex-row gap-10 ">
         <img className="w-2/5" src={image} alt="" />
         <div>
           <h2 className="font-bold text-[40px]">{title}</h2>
